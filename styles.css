@@ -16,7 +16,7 @@ body {
 }
 
 .apresentacao {
-    margin: 10% 8%;
+    padding: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,4 +85,26 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
+}
+
+.cabecalho__menu__link {
+    font-size: 18px;
+    color: #333;
+    margin: 0 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #270000;
+    border: 1px solid #270000;
+    border-radius: 8px;
+}
+
+.cabecalho__menu__link:hover {
+    color: #fd2222;
+}
+
+.cabecalho__menu {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
