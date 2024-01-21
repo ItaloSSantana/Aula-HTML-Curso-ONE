@@ -32,10 +32,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px
 }
 
 .apresentacao__conteudo {
-    width: 630px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -64,13 +65,13 @@ body {
     font-size: var(--fonte-tamanho-24);
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--cor-primaria);
     border: 2px solid var(--cor-terciaria);
-    width: 381px;
+    width: 75%;
     text-align: center;
     border-radius: 8px;
     font-size: var(--fonte-tamanho-24);
@@ -82,11 +83,15 @@ body {
     gap: 16px;
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     background: var(--cor-detalhe);
     color: var(--cor-secundaria);
     padding: 4%;
     cursor: pointer;
+}
+
+.apresentacao__imagem {
+    width: 50%;
 }
 
 .rodape {
@@ -119,4 +124,24 @@ body {
 
 .cabecalho__menu__link:hover {
     color: var(--cor-secundaria);
+}
+
+@media (max-width: 1130px) {
+
+    .cabecalho {
+        padding: 6%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
 }
