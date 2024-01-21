@@ -7,10 +7,23 @@
 }
 
 .cabecalho {
+    padding: 2% 0 2% 15%;
     background-color: #fd2222;
 }
 
-.cabecalho__menu {}
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #270000;
+    text-decoration: none;
+}
 
 body {
     box-sizing: border-box;
@@ -23,6 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 96px
 }
 
 .sobre__conteudo {
@@ -45,4 +59,14 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-align: left;
+}
+
+.rodape {
+    color: black;
+    background-color: #fd2222;
+    padding: 24px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
