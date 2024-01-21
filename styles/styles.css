@@ -5,14 +5,24 @@
     padding: 0;
 }
 
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #fd2222;
+    --cor-detalhe: #270000;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 body {
     box-sizing: border-box;
-    background-color: black;
-    color: #F6F6F6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .titulo-destaque {
-    color: #fd2222;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao {
@@ -31,12 +41,12 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo__paragrafo {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links {
@@ -48,7 +58,7 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 24px;
 }
 
@@ -56,8 +66,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    border: 2px solid #fd2222;
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-terciaria);
     width: 381px;
     text-align: center;
     border-radius: 8px;
@@ -65,31 +75,31 @@ body {
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #fd2222;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
     gap: 16px;
 }
 
 .apresentacao__links__link:hover {
-    background: #270000;
-    color: #F6F6F6;
+    background: var(--cor-detalhe);
+    color: var(--cor-secundaria);
     padding: 4%;
     cursor: pointer;
 }
 
 .rodape {
-    color: black;
-    background-color: #fd2222;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
 }
 
 .cabecalho {
     padding: 2% 0 2% 15%;
-    background-color: #fd2222;
+    background-color: var(--cor-terciaria);
 }
 
 .cabecalho__menu {
@@ -99,12 +109,12 @@ body {
 
 .cabecalho__menu__link {
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     color: #270000;
     text-decoration: none;
 }
 
 .cabecalho__menu__link:hover {
-    color: #F6F6F6;
+    color: var(--cor-secundaria);
 }
